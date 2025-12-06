@@ -149,6 +149,7 @@ void checkButtons();
 void returnToMenu();
 String urlEncode(String str);
 String createMultipartBoundary();
+String jsonEscape(String str);
 
 void setup() {
   Serial.begin(115200);
@@ -168,8 +169,17 @@ void setup() {
   u8g2.drawStr(0, 20, "Initializing...");
   u8g2.sendBuffer();
 
-  // Allocate audio buffer
-  audioBuffer = (int16_t*)malloc(MAX_RECORD_SAMPLES * sizeof(int16_t));
+  // Allocate audio buffer with overflow protection
+  size_t bufferSize = (size_t)MAX_RECORD_SAMPLES * sizeof(int16_t);
+  // Check for overflow: if the result is smaller than MAX_RECORD_SAMPLES, overflow occurred
+  if (bufferSize / sizeof(int16_t) != MAX_RECORD_SAMPLES) {
+    Serial.println("Buffer size overflow detected!");
+    u8g2.clearBuffer();
+    u8g2.drawStr(0, 20, "Config Error!");
+    u8g2.sendBuffer();
+    while (1) delay(1000);
+  }
+  audioBuffer = (int16_t*)malloc(bufferSize);
   if (!audioBuffer) {
     Serial.println("Failed to allocate audio buffer!");
     u8g2.clearBuffer();
@@ -362,8 +372,16 @@ void recordAudio() {
     i2s_read(I2S_PORT, &i2s_data, DMA_BUF_LEN * 4, &bytesRead, portMAX_DELAY);
     int samplesRead = bytesRead / 4;
     
-    for (int i = 0; i < samplesRead && audioSampleCount < MAX_RECORD_SAMPLES; i++) {
+    for (int i = 0; i < samplesRead; i++) {
+      if (audioSampleCount >= MAX_RECORD_SAMPLES) {
+        break;
+      }
       audioBuffer[audioSampleCount++] = (int16_t)(i2s_data[i] >> 14);
+    }
+    
+    // Stop if buffer is full
+    if (audioSampleCount >= MAX_RECORD_SAMPLES) {
+      break;
     }
 
     u8g2.clearBuffer();
@@ -470,7 +488,7 @@ String getChatResponse(String userMessage) {
     https.addHeader("Content-Type", "application/json");
 
     String jsonPayload = "{\"model\":\"" + String(CHAT_MODEL) + "\",";
-    jsonPayload += "\"messages\":[{\"role\":\"user\",\"content\":\"" + userMessage + "\"}],";
+    jsonPayload += "\"messages\":[{\"role\":\"user\",\"content\":\"" + jsonEscape(userMessage) + "\"}],";
     jsonPayload += "\"max_tokens\":300}";
 
     int httpCode = https.POST(jsonPayload);
@@ -587,7 +605,7 @@ void saveAssignment(String assignmentText) {
     https.addHeader("Prefer", "return=minimal");
     
     String payload = "{\"user_id\":\"" + String(SUPABASE_USER_ID) + "\",";
-    payload += "\"raw_text\":\"" + assignmentText + "\",";
+    payload += "\"raw_text\":\"" + jsonEscape(assignmentText) + "\",";
     payload += "\"parsed_data\":" + aiParsed + "}";
     
     int httpCode = https.POST(payload);
@@ -846,6 +864,7 @@ void checkButtons() {
   }
   
   // Handle recording in AI mode
+  // Note: Static variable used to prevent re-entry. Safe in single-threaded Arduino environment.
   if (currentMode == MODE_AI && btnPressed && (now - btnPressStart > LONG_PRESS_DELAY)) {
     static bool isRecording = false;
     if (!isRecording) {
@@ -951,4 +970,30 @@ String urlEncode(String str) {
 
 String createMultipartBoundary() {
   return "----WebKitFormBoundary" + String(random(1000000, 9999999));
+}
+
+String jsonEscape(String str) {
+  String escaped = "";
+  for (int i = 0; i < str.length(); i++) {
+    char c = str.charAt(i);
+    switch (c) {
+      case '"':  escaped += "\\\""; break;
+      case '\\': escaped += "\\\\"; break;
+      case '\b': escaped += "\\b"; break;
+      case '\f': escaped += "\\f"; break;
+      case '\n': escaped += "\\n"; break;
+      case '\r': escaped += "\\r"; break;
+      case '\t': escaped += "\\t"; break;
+      default:
+        if (c < 0x20) {
+          // Escape control characters
+          char buf[7];
+          sprintf(buf, "\\u%04x", c);
+          escaped += buf;
+        } else {
+          escaped += c;
+        }
+    }
+  }
+  return escaped;
 }
