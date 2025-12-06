@@ -10,17 +10,18 @@ This compact computer is equipped with an ESP32 Seed Studio microcontroller, fea
 
 The custom PCB was designed using EasyEDA. Below are the 3D renders and PCB layout:
 
-### 3D Views
-
-![PCB 3D View - Front](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(1).png)
-
-![PCB 3D View - Front Angle](image1)
-
-![PCB 3D View - Back](image2)
-
 ### PCB Layout
 
-![PCB Layout](image3)
+![PCB view](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(1).png)
+
+
+### 3D Renders
+
+![PCB 3D View - Back Angle](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(2).png)
+
+![PCB 3D View - Side](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(3).png)
+
+![PCB 3D View - Front](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update.png)
 
 ## Features
 
