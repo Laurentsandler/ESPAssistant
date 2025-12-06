@@ -4,7 +4,23 @@ A small portable AI Assistant computer built with ESP32.
 
 ## Description
 
-This compact computer is equipped with an ESP32 Seed Studio microcontroller, featuring three buttons, a small OLED display, and an INMP441 microphone. It connects to a smartphone's hotspot. Upon pressing a button, the computer initiates recording from the microphone, transmits the recording to a transcription service (Groq Whisper), and subsequently sends it to an AI model (Llama). The AI results are displayed on the OLED screen.
+This compact computer is equipped with an ESP32 Seed Studio microcontroller, featuring three buttons, a small OLED display, and an INMP441 microphone. It connects to a smartphone's hotspot. Upon pressing and holding one of the buttons, it records audio, which is then transcribed using the Groq Whisper API and sent to the Groq Llama 3.1 API for a chat response. The response is displayed on the OLED screen.
+
+## Hardware Design
+
+The custom PCB was designed using EasyEDA. Below are the 3D renders and PCB layout:
+
+### 3D Views
+
+![PCB 3D View - Front](image4)
+
+![PCB 3D View - Front Angle](image1)
+
+![PCB 3D View - Back](image2)
+
+### PCB Layout
+
+![PCB Layout](image3)
 
 ## Features
 
