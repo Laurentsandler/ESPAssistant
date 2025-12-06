@@ -12,7 +12,7 @@ The custom PCB was designed using EasyEDA. Below are the 3D renders and PCB layo
 
 ### 3D Views
 
-![PCB 3D View - Front](image4)
+![PCB 3D View - Front](PCB design images update (1).png)
 
 ![PCB 3D View - Front Angle](image1)
 
