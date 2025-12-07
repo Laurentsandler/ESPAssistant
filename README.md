@@ -110,9 +110,10 @@ After connecting to WiFi, access the web interface at:
 - **Supabase**: Database for assignment storage
 
 ## Case
-The files for the case are included in the repo.
-
-
+![Case mockup bottom view.jpg](https://github.com/Laurentsandler/ESPAssistant/blob/main/Images/Case%20mockup%20bottom%20view.jpg)
+![Case mockup side veiw.jpg](https://github.com/Laurentsandler/ESPAssistant/blob/main/Images/Case%20mockup%20side%20veiw.jpg)
+![Case mockup top alternate view.jpg](https://github.com/Laurentsandler/ESPAssistant/blob/main/Images/Case%20mockup%20top%20alternate%20view.jpg)
+![Case mockup top view.jpg](https://github.com/Laurentsandler/ESPAssistant/blob/main/Images/Case%20mockup%20top%20view.jpg)
 
 ## License
 
