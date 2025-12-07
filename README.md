@@ -12,16 +12,16 @@ The custom PCB was designed using EasyEDA. Below are the 3D renders and PCB layo
 
 ### PCB Layout
 
-![PCB view](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(1).png)
+![PCB view](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB/PCB%20design%20images%20update%20(1).png)
 
 
 ### 3D Renders
 
-![PCB 3D View - Back Angle](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(2).png)
+![PCB 3D View - Back Angle](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB/PCB%20design%20images%20update%20(2).png)
 
-![PCB 3D View - Side](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update%20(3).png)
+![PCB 3D View - Side](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB/PCB%20design%20images%20update%20(3).png)
 
-![PCB 3D View - Front](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB%20design%20images%20update.png)
+![PCB 3D View - Front](https://github.com/Laurentsandler/ESPAssistant/blob/main/PCB/PCB%20design%20images%20update.png)
 
 ## Features
 
@@ -60,7 +60,7 @@ Install these libraries via Arduino IDE Library Manager:
 
 ## Configuration
 
-Before uploading, edit the following in `src/sketch.ino`:
+Before uploading, edit the following in `Firmware/sketch.ino`:
 
 ```cpp
 const char* WIFI_SSID = "YOUR_WIFI_SSID";
