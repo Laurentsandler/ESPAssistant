@@ -109,6 +109,11 @@ After connecting to WiFi, access the web interface at:
 - **ipapi.co**: IP-based geolocation
 - **Supabase**: Database for assignment storage
 
+## Case
+The files for the case are included in the repo.
+
+
+
 ## License
 
 MIT License
