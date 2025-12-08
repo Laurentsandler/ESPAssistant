@@ -116,12 +116,14 @@ After connecting to WiFi, access the web interface at:
 ![Case mockup top view.jpg](https://github.com/Laurentsandler/ESPAssistant/blob/main/Images/Case%20mockup%20top%20view.jpg)
 
 ## Bom: 
-Component,Footprint,Quantity,Supplier Part Number,price,link
-OLED SD130,OLED-TH12864,1,C9900014198,10€,https://amzn.eu/d/837vRA1
-INMP441-MEMS-I2S-MIC-MODULE,INMP441-MEMS-I2S-MIC-MODULE,1,N/A,7€,https://amzn.eu/d/0Qtf1CE
-SEEED XIAO ESP32S3,SEEED STUDIO XIAO_S3 BY LAURENT,1,N/A,20€,https://amzn.eu/d/1FE54ig
-TS-1187A-B-A-B,SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5,4,C318884,0.32€,https://www.lcsc.com/product-detail/C318884.html?s_z=n_TS-1187A-B-A-B
-500175140 PogoPin Connector, N/A,1,B09STS5YZX,7.90€,https://amzn.eu/d/2DIAPW8
+| Component                   | Footprint                               | Quantity | Supplier Part Number | Price | Link                                                                                                                                           |
+| --------------------------- | --------------------------------------- | -------- | -------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| OLED SD130                  | OLED-TH12864                            | 1        | C9900014198          | 10€   | [https://amzn.eu/d/837vRA1](https://amzn.eu/d/837vRA1)                                                                                         |
+| INMP441-MEMS-I2S-MIC-MODULE | INMP441-MEMS-I2S-MIC-MODULE             | 1        | N/A                  | 7€    | [https://amzn.eu/d/0Qtf1CE](https://amzn.eu/d/0Qtf1CE)                                                                                         |
+| SEEED XIAO ESP32S3          | SEEED STUDIO XIAO_S3 BY LAURENT         | 1        | N/A                  | 20€   | [https://amzn.eu/d/1FE54ig](https://amzn.eu/d/1FE54ig)                                                                                         |
+| TS-1187A-B-A-B              | SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 | 4        | C318884              | 0.32€ | [https://www.lcsc.com/product-detail/C318884.html?s_z=n_TS-1187A-B-A-B](https://www.lcsc.com/product-detail/C318884.html?s_z=n_TS-1187A-B-A-B) |
+| 500175140 PogoPin Connector | N/A                                     | 1        | B09STS5YZX           | 7.90€ | [https://amzn.eu/d/2DIAPW8](https://amzn.eu/d/2DIAPW8)                                                                                         |
+
 
 ## License
 
