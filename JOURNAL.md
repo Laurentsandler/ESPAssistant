@@ -5,8 +5,9 @@
 ---
 
 ## December 7, 2025
+I designed a case and included space for a small battery, a couple of millimeters thick, and some flexible pieces on the case to push the buttons. Some photographs are attached below. And I added the STL files to the repository.
 
-Designed a case with space for a small battery, about a couple of millimeters thick. I added flexible pieces on the case to push the buttons, which should make it more functional while keeping the design compact. Added the STL files to the repository so anyone can print their own case.
+
 
 **Files added:**
 - `Case with space for battery.stl`
@@ -22,102 +23,72 @@ Designed a case with space for a small battery, about a couple of millimeters th
 
 ## ~5 days ago - Finalizing and getting PCB manufactured (2.0 hours)
 
-Finally finalized the PCB design! I decided to add a fourth button to make the interface more flexible. Made all the buttons low-profile to keep the device as thin as possible.
+I finalized the PCB I added a fourth button and made all of the buttons low-profile ones. And remove the expandable I/O. I considered using a small I/O expansion chip, but since this was my first time making a PCB, I wanted it to be as simple as possible. So I decided against that.
 
-I removed the expandable I/O that I had considered earlier. I thought about using a small I/O expansion chip, but decided against it to keep things simple - this is my first PCB project after all, and I want to make sure I can actually get it working before adding complexity.
-
-Ordered the PCB today! It should arrive in 5-6 days. Once it arrives, I'll need to solder all the components and finish up the code and custom UI. Excited to see how it turns out!
+I should get the PCB in 5-6 days. Once I get it, I'll solder on the components. In the meantime, I'll need to finish writing the code for it and designing a custom UI.
 
 ---
 
 ## ~18 days ago - Tested circuit with new board (1.3 hours)
 
-The Seeed Studio XIAO ESP32S3 board arrived today in a really tiny package - I was amazed at how small it is! Connected it to the components on my breadboard and uploaded the code.
-
-Ran into some issues right away because this board has a different configuration compared to the other ESP32 dev kit I was using before. Had to spend some time fixing the configuration in the code, but once I got that sorted out, everything worked perfectly!
-
-One nice surprise: the upload speed is much faster on this board. That's going to save a lot of time during development.
+Today my Seeed Studio XIAO ESP32S3 board finally arrived. It came in this small little tiny package. So I connected it to all my components on a breadboard and uploaded the code. But some things didn't work. Turns out the seeed studio board has a different configuration than my other ESP32 dev kit. So I changed that, and once I changed it, everything worked without problems. Also, I noticed that the upload speed on this board is way faster. It can upload stuff a lot faster than my other board.
 
 ---
 
 ## ~19 days ago - Redesigned the PCB (2.0 hours)
 
-Redesigned the PCB to use holes with pins instead of direct soldering for the microcontroller. This should make it easier to replace the microcontroller if needed, and also makes the assembly process more forgiving.
+Today I decided to redesign the PCB a little bit because first I realized that it was gonna be pretty hard to directly solder on the microcontroller onto the PCB instead of just using pins. So I redesigned it to use holes where I can put pins in, and then the microcontroller on top to connect it to the PCB. Also, I got some inspiration from another mini computer I saw on Instagram, they also had a Kick starter:
 
-Got some inspiration from another mini computer I saw on Instagram (it had a Kickstarter campaign). It made me think about what features would make this more versatile.
+I saw that it has really easy expandable gpio at the top, which I thought would be really nice to have incase i wanted to connect some servos or maybe a temp/humidity sensor. I wanted to use a right angled female socket connector, but sadly jlcpcba did not have any in their library of parts, and I didn't want to solder this one on myself. So I settled on a low-profile flat design. Which JLC PCBA had in stock.
 
-I wanted to add expandable GPIO at the top for servos or sensors - that would be really cool for future projects. I also wanted to use a right-angled female socket connector, but JLCPCBA didn't have it in stock. Had to settle for a low-profile flat design that was available. It's not exactly what I wanted, but it should work fine.
-
-Still considering adding a pogo pin connector at the back for additional expandability. Not sure if it's worth the added complexity yet.
+I will definitely take more inspiration from this really cool product. Maybe I'll add the little pogo pin connector at the back.
 
 ---
 
 ## ~20 days ago - Designing the PCB (4.0 hours)
 
-Spent the day designing the PCB in EasyEDA while waiting for the components to ship. This is my first time designing a PCB from scratch, so there's definitely a learning curve. I'm watching tutorials and reading documentation as I go.
+While the component was shipping, I set out to design my PCB so the whole construction would be smaller. I used easyeda to design the PCB.
 
-The plan is to have JLCPCB manufacture the PCB after I test the circuit on a breadboard. Don't want to order a PCB that doesn't work! Better to validate the design first.
+Once I get the small microcontroller and test out the circuit on the breadboard and make sure it works, I will have JLC PCB manufacture the PCB.
 
 ---
 
 ## ~20 days ago - Researching for smaller components (0.5 hours)
 
-Realized that my original design was way too big to be practical. If I want this to be something I can actually carry around and use throughout the day, it needs to be much smaller.
+Although this design worked, it was way too big to be practical. So I wanted to make it a lot smaller, but with my current ESP32 dev board and my current setup, it was just too big.
 
-Did some research on smaller ESP32 microcontrollers and found the Seeed Studio XIAO ESP32 S3 board. It's incredibly small and has a built-in charging circuit, which is perfect for what I need!
+So I set out to find a smaller microcontroller.
 
-Here's what I'm planning for the final parts list:
-- Seeed Studio XIAO ESP32 S3 (very small with built-in charging)
-- Small INMP441 microphone
-- Small 3.9" diagonal OLED screen
-- Three small buttons
-
-I already had all the components except the microcontroller, so I ordered that on Amazon. Should arrive in a couple of days.
-
+I researched for a small esp32 microcontroller that I can use, as I am familiar with esp32 boards. I found the Seeed Studio XIAO ESP32 S3 board, it is really small! I found out that it has a built in charging circut, so I will not need an external one, thats good news I planned that the parts I will need are as follows: - A small INMP441 microphone - A small 3.9 diagonal OLED screen - Three small buttons I already have all of these components. Except the microcontroller which I ordered on Amazon.
 ---
 
 ## ~20 days ago - Designed and 3D printed prototype (2.0 hours)
 
-Designed a case in Onshape to test the prototype in the real world. Wanted to see how it actually feels to use this thing before committing to the final design.
-
-3D printed the case and assembled all the components. Took it with me throughout the day to test it in real-world conditions. This was the moment of truth - would the battery last? Would it be practical to actually use?
-
-Results: Battery lasted about 11.5 hours without stopping! That's way better than I expected. The concept is proven - this can actually work as a daily carry device!
-
+I wanted to test how the prototype worked in the real world, I designed a case for it in on shape. I had put all the components in the case once I 3D printed it and took it with me on my day. It was really useful and without stopping, the battery lasted about 11.5 hours, so
+the concept was proven.
 ---
 
 ## ~20 days ago - Built Large prototype (5.0 hours)
 
-Built my first working prototype using whatever parts I had available on a proto board. It's not pretty, but it works!
+Built a working prototype using the parts I already had, and I then programmed it. It has:
 
-Components I used:
-- Small battery
-- PMS board
-- Microphone
-- Two buttons
-- OLED display
-- ESP32 dev board
-
-Successfully got it to:
-1. Record speech
-2. Transcribe it (using Groq Whisper API)
-3. Send to AI (Groq Llama 3.1)
-4. Display the response on screen
-
-The code is rough and the hardware is bulky, but seeing it work for the first time was incredibly satisfying. This proves the concept can work!
+A small battery
+A PMS board
+A microphone
+Two buttons
+An OLED display
+An ESP32 dev board All connected to a proto board.
+It successfully recorded my speech, transcribed it, sent it to AI, and then showed me the response back.
 
 ---
 
 ## ~20 days ago - Making the idea (0.1 hours)
 
-Had the initial idea for this project. I wanted a small computer that could help me throughout the day with AI assistance. 
+So, I wanted a small little computer that will help me throughout the day.
 
-The input would be through a microphone, buttons, and a small display - keeping it simple and focused.
+I wanted it to have AI. And also an input using a microphone and some buttons and a small display.
 
-My main use case is for school: I want to be able to track assignments from teachers. The workflow would be:
-1. Press a button
-2. Record my voice describing the assignment
-3. Have it transcribed automatically
-4. Send it to a custom website that organizes my assignments and notes
+I am in school, so I wanted it to help me track assignments as they come in from my teachers. So, I want to when I press a button, it will record my voice, transcribe it, and then have it sent to a custom website to be added to my assignments or notes, etc.
 
-This could be a game-changer for staying organized!
+
+
