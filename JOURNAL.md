@@ -4,7 +4,7 @@
 
 ---
 
-## December 7, 2025 (1.5 hours)
+## December 7, 2025
 
 Designed a case with space for a small battery, about a couple of millimeters thick. I added flexible pieces on the case to push the buttons, which should make it more functional while keeping the design compact. Added the STL files to the repository so anyone can print their own case.
 
