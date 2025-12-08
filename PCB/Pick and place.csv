@@ -1,0 +1,8 @@
+﻿Designator	Footprint	Mid X	Mid Y	Ref X	Ref Y	Pad X	Pad Y	Layer	Rotation	Comment
+"SW1"	"SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5"	"20.7mm"	"35.81mm"	"20.7mm"	"35.81mm"	"17.7mm"	"37.66mm"	"T"	"0"	"TS-1187A-B-A-B"
+"SW2"	"SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5"	"38.61mm"	"35.81mm"	"38.61mm"	"35.81mm"	"35.61mm"	"37.66mm"	"T"	"0"	"TS-1187A-B-A-B"
+"SW3"	"SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5"	"12.07mm"	"35.81mm"	"12.07mm"	"35.81mm"	"9.07mm"	"37.66mm"	"T"	"0"	"TS-1187A-B-A-B"
+"SW4"	"SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5"	"30.1mm"	"35.81mm"	"30.1mm"	"35.81mm"	"27.1mm"	"37.66mm"	"T"	"0"	"TS-1187A-B-A-B"
+"U1"	"SEEED STUDIO XIAO_S3 BY LAURENT"	"34.88mm"	"20.3mm"	"34.29mm"	"18.54mm"	"42.59mm"	"13.14mm"	"T"	"180"	"SEEED XIAO ESP32S3"
+"U2"	"INMP441-MEMS-I2S-MIC-MODULE"	"15.37mm"	"17.65mm"	"15.37mm"	"17.65mm"	"19.18mm"	"20.19mm"	"T"	"0"	"INMP441-MEMS-I2S-MIC-MODULE"
+"U4"	"OLED-TH12864"	"25.4mm"	"71.63mm"	"25.4mm"	"71.63mm"	"21.59mm"	"71.63mm"	"T"	"0"	"OLED SD1306"
