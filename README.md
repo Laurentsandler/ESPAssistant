@@ -6,12 +6,55 @@ A small portable AI Assistant computer built with ESP32.
 
 This compact computer is equipped with an ESP32 Seed Studio microcontroller, featuring three buttons, a small OLED display, and an INMP441 microphone. It connects to a smartphone's hotspot. Upon pressing and holding one of the buttons, it records audio, which is then transcribed using the Groq Whisper API and sent to the Groq Llama 3.1 API for a chat response. The response is displayed on the OLED screen.
 
-## My motiviation:
+## My motivation:
 So, I wanted a small little computer that will help me throughout the day.
 
 I wanted it to have AI. And also an input using a microphone and some buttons and a small display.
 
 I am in school, so I wanted it to help me track assignments as they come in from my teachers. So, I want to when I press a button, it will record my voice, transcribe it, and then have it sent to a custom website to be added to my assignments or notes, etc.
+
+---
+
+## Portable Aesthetic Phone (New Project)
+
+A new evolution of the ESPAssistant project - a portable aesthetic phone with a 3.5-inch capacitive touch display.
+
+### Inspiration
+
+Inspired by **The Light Phone**, I wanted to build a small phone with numerous sensors and outputs. By building my own, I have complete control over the UI, apps, and how it functions. Unlike The Light Phone which uses an e-ink display, I wanted a full-color high-refresh-rate display.
+
+### Development Board
+
+**Waveshare ESP32-S3 3.5 inch Capacitive Touch Display Development Board**
+
+Features:
+- 3.5-inch capacitive touch display
+- Built-in speakers
+- Built-in camera
+- Battery headers
+- ESP32-S3 architecture
+- Expandable I/O
+- Multiple sensors
+
+### Battery
+
+**EEMB Battery 3.7V 2000mAh 103454 Lipo Rechargeable Battery**
+- Lithium-ION Polymer Battery with JST Connector
+- Compatible with the dev board's battery headers
+- Provides long battery life
+
+### Case Design
+
+The case is designed to:
+- Accommodate the battery
+- Include peripheral holes for microphone and speaker
+- Be printable without supports on an Ender 3 S1
+- Use a dark blue color to complement the black display
+
+**Hardware Required:**
+- 4x M2x8 Countersunk Screws
+
+---
 
 ## Hardware Design
 
@@ -130,6 +173,14 @@ After connecting to WiFi, access the web interface at:
 | SEEED XIAO ESP32S3          | SEEED STUDIO XIAO_S3 BY LAURENT         | 1        | N/A                  | 20€   | [https://amzn.eu/d/1FE54ig](https://amzn.eu/d/1FE54ig)                                                                                         |
 | TS-1187A-B-A-B              | SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5 | 4        | C318884              | 0.32€ | [https://www.lcsc.com/product-detail/C318884.html?s_z=n_TS-1187A-B-A-B](https://www.lcsc.com/product-detail/C318884.html?s_z=n_TS-1187A-B-A-B) |
 | 500175140 PogoPin Connector | N/A                                     | 1        | B09STS5YZX           | 7.90€ | [https://amzn.eu/d/2DIAPW8](https://amzn.eu/d/2DIAPW8)                                                                                         |
+
+## Portable Aesthetic Phone BOM
+
+| Component                   | Specification                           | Quantity | Price  | Link/Notes                                                                                                                                     |
+| --------------------------- | --------------------------------------- | -------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Waveshare ESP32-S3 Display  | 3.5 inch Capacitive Touch Development Board | 1    | ~$40   | Includes display, speakers, camera, battery headers, and expandable I/O                                                                      |
+| EEMB Battery                | 3.7V 2000mAh 103454 Lipo               | 1        | ~$15   | Lithium-ION Polymer Battery with JST Connector                                                                                                |
+| M2x8 Countersunk Screws     | Metric M2 x 8mm                        | 4        | ~$2    | For securing the case                                                                                                                          |
 
 
 ## License

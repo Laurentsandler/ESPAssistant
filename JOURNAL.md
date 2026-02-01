@@ -1,8 +1,68 @@
 # Development Journal
 
-**Total Time Spent: 16.9 hours**
+**Total Time Spent: 23.0 hours**
 
 ---
+
+## Portable Aesthetic Phone Project
+
+### Designing the Case (3.5 hours)
+
+I wanted to make sure the case had enough space for a battery and a little button to press on the buttons on the dev board. I was going to print it in a nice dark blue color. That suits the black of the display. I found a starting point of a much smaller case for this same dev board, but it didn't have space for a battery and it had some MagSafe rings, which I didn't need. I spent a couple of hours adding some peripheral holes for the microphone and speaker, extending it to have space for the battery, and just tweaking it.
+
+Then I printed it on my Ender 3 S1 to make sure it was actually printable without supports, and that people wouldn't have trouble printing it.
+
+**Hardware needed:**
+- 4x M2x8 Countersunk Screws (to secure the case)
+
+---
+
+### Finding a Suitable Battery (0.2 hours)
+
+It was going to be very easy to add a battery into this project. Since the dev board already had battery headers. I wanted the battery life on it to be very long. I settled on this battery which was easily accessible on Amazon:
+
+**EEMB Battery 3.7V 2000mAh 103454 Lipo Rechargeable Battery Lithium-ION Polymer Battery with JST Connector**
+
+It had pretty good mAh (2000mAh) and was 3.7V exactly as needed for the dev board.
+
+---
+
+### Research - Choosing the Development Board (2.0 hours)
+
+When picking out the parts for this project, I wanted to make sure that anyone who came across this could easily make it even if they had very little experience. So I decided to go with a pre-built module combining everything I needed instead of building a custom PCB. So I set out on Amazon researching for the perfect module. It took me a very long time to pick out a module. I wanted one with the most functionality, and there are a lot.
+
+I finally decided on this one:
+
+**Waveshare ESP32-S3 3.5 inch Capacitive Touch Display Development Board**
+
+It was perfect. It had:
+- Loads of sensors
+- Built-in speakers
+- Built-in camera
+- Battery headers
+- ESP32-S3 architecture (which I am very familiar with)
+- Expandable I/O
+- From a reputable company (Waveshare)
+
+---
+
+### Making the Idea (0.4 hours)
+
+I wanted to build a small phone with numerous sensors and outputs. I wanted to do this because if I build my own, I have complete control over the UI, apps, and how it functions.
+
+After doing some research, I was inspired by **The Light Phone** - a minimalist phone with an e-ink display.
+
+The only problem was that it had an e-ink display, while I wanted a full-color high-refresh-rate display.
+
+**Design Requirements:**
+- About 3.5-inch display
+- Super modern and cool look
+- Relatively long battery life
+- Full-color high-refresh-rate display (not e-ink)
+
+---
+
+## Previous ESPAssistant Development
 
 ## December 7, 2025
 I designed a case and included space for a small battery, a couple of millimeters thick, and some flexible pieces on the case to push the buttons. Some photographs are attached below. And I added the STL files to the repository.
