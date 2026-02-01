@@ -6,24 +6,21 @@
 
 ## Portable Aesthetic Phone Project
 
-### Designing the Case (3.5 hours)
+*Started January 29, 2026*
 
-I wanted to make sure the case had enough space for a battery and a little button to press on the buttons on the dev board. I was going to print it in a nice dark blue color. That suits the black of the display. I found a starting point of a much smaller case for this same dev board, but it didn't have space for a battery and it had some MagSafe rings, which I didn't need. I spent a couple of hours adding some peripheral holes for the microphone and speaker, extending it to have space for the battery, and just tweaking it.
+### Making the Idea (0.4 hours)
 
-Then I printed it on my Ender 3 S1 to make sure it was actually printable without supports, and that people wouldn't have trouble printing it.
+I wanted to build a small phone with numerous sensors and outputs. I wanted to do this because if I build my own, I have complete control over the UI, apps, and how it functions.
 
-**Hardware needed:**
-- 4x M2x8 Countersunk Screws (to secure the case)
+After doing some research, I was inspired by **The Light Phone** - a minimalist phone with an e-ink display.
 
----
+The only problem was that it had an e-ink display, while I wanted a full-color high-refresh-rate display.
 
-### Finding a Suitable Battery (0.2 hours)
-
-It was going to be very easy to add a battery into this project. Since the dev board already had battery headers. I wanted the battery life on it to be very long. I settled on this battery which was easily accessible on Amazon:
-
-**EEMB Battery 3.7V 2000mAh 103454 Lipo Rechargeable Battery Lithium-ION Polymer Battery with JST Connector**
-
-It had pretty good mAh (2000mAh) and was 3.7V exactly as needed for the dev board.
+**Design Requirements:**
+- About 3.5-inch display
+- Super modern and cool look
+- Relatively long battery life
+- Full-color high-refresh-rate display (not e-ink)
 
 ---
 
@@ -46,19 +43,24 @@ It was perfect. It had:
 
 ---
 
-### Making the Idea (0.4 hours)
+### Finding a Suitable Battery (0.2 hours)
 
-I wanted to build a small phone with numerous sensors and outputs. I wanted to do this because if I build my own, I have complete control over the UI, apps, and how it functions.
+It was going to be very easy to add a battery into this project. Since the dev board already had battery headers. I wanted the battery life on it to be very long. I settled on this battery which was easily accessible on Amazon:
 
-After doing some research, I was inspired by **The Light Phone** - a minimalist phone with an e-ink display.
+**EEMB Battery 3.7V 2000mAh 103454 Lipo Rechargeable Battery Lithium-Ion Polymer Battery with JST Connector**
 
-The only problem was that it had an e-ink display, while I wanted a full-color high-refresh-rate display.
+It had pretty good mAh (2000mAh) and was 3.7V exactly as needed for the dev board.
 
-**Design Requirements:**
-- About 3.5-inch display
-- Super modern and cool look
-- Relatively long battery life
-- Full-color high-refresh-rate display (not e-ink)
+---
+
+### Designing the Case (3.5 hours)
+
+I wanted to make sure the case had enough space for a battery and a little button to press on the buttons on the dev board. I was going to print it in a nice dark blue color. That suits the black of the display. I found a starting point of a much smaller case for this same dev board, but it didn't have space for a battery and it had some MagSafe rings, which I didn't need. I spent a couple of hours adding some peripheral holes for the microphone and speaker, extending it to have space for the battery, and just tweaking it.
+
+Then I printed it on my Ender 3 S1 to make sure it was actually printable without supports, and that people wouldn't have trouble printing it.
+
+**Hardware needed:**
+- 4x M2x8 Countersunk Screws (to secure the case)
 
 ---
 

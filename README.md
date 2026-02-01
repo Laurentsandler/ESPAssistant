@@ -39,7 +39,7 @@ Features:
 ### Battery
 
 **EEMB Battery 3.7V 2000mAh 103454 Lipo Rechargeable Battery**
-- Lithium-ION Polymer Battery with JST Connector
+- Lithium-Ion Polymer Battery with JST Connector
 - Compatible with the dev board's battery headers
 - Provides long battery life
 
@@ -179,7 +179,7 @@ After connecting to WiFi, access the web interface at:
 | Component                   | Specification                           | Quantity | Price  | Link/Notes                                                                                                                                     |
 | --------------------------- | --------------------------------------- | -------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Waveshare ESP32-S3 Display  | 3.5 inch Capacitive Touch Development Board | 1    | ~$40   | Includes display, speakers, camera, battery headers, and expandable I/O                                                                      |
-| EEMB Battery                | 3.7V 2000mAh 103454 Lipo               | 1        | ~$15   | Lithium-ION Polymer Battery with JST Connector                                                                                                |
+| EEMB Battery                | 3.7V 2000mAh 103454 Lipo               | 1        | ~$15   | Lithium-Ion Polymer Battery with JST Connector                                                                                                |
 | M2x8 Countersunk Screws     | Metric M2 x 8mm                        | 4        | ~$2    | For securing the case                                                                                                                          |
 
 
